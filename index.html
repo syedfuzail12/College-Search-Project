@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>College Search</h1>
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search by college name...">
+      <select id="streamFilter">
+        <option value="">All Streams</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Arts">Arts</option>
+        <option value="Science">Science</option>
+      </select>
+      <select id="courseFilter">
+        <option value="">All Courses</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="BA">BA</option>
+        <option value="M.Tech">M.Tech</option>
+        <option value="PhD">PhD</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="collegeList" class="college-list">
+      <!-- Cards will be dynamically generated here -->
+    </section>
+
+    <div id="collegeDetails" class="college-details hidden">
+      <button id="closeDetails" class="close-btn">Close</button>
+      <div id="detailsContent"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
